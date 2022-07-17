@@ -138,7 +138,7 @@ body.dark-theme {
 }
 
 .dark-theme .product__circle,
-.dark-theme .questions {
+.dark-theme .technologies {
   background-color: var(--container-color);
 }
 
@@ -351,37 +351,78 @@ body.dark-theme {
   transform: translateX(0.25rem);
 }
 
+.technologies {
+  background-color: var(--first-color-lighten);
+}
+
 .technologies__container {
-  row-gap: 2rem;
+  gap: 1.5rem;
+  padding: 1.5rem 0;
 }
 
-.technologies__img {
-  width: 280px;
-  justify-self: center;
+.technologies__group {
+  display: grid;
+  row-gap: 1.5rem;
 }
 
-.technologies__title {
-  margin-bottom: var(--mb-1);
+.technologies__item {
+  background-color: var(--container-color);
+  border-radius: 0.25rem;
+}
+
+.technologies__item-title {
+  font-size: var(--small-font-size);
+  font-weight: var(--font-medium);
+}
+
+.technologies__icon {
+  font-size: 1.25rem;
+  color: var(--title-color);
 }
 
 .technologies__description {
-  margin-bottom: var(--mb-2);
+  font-size: var(--smaller-font-size);
+  padding: 0 1.25rem 1.25rem 2.5rem;
 }
 
-.technologies__details {
-  display: grid;
-  row-gap: 1rem;
-  margin-bottom: var(--mb-2-5);
-}
-
-.technologies__details-description {
-  display: inline-flex;
+.technologies__header {
+  display: flex;
+  align-items: center;
   column-gap: 0.5rem;
-  font-size: var(--small-font-size);
+  padding: 0.75rem 0.5rem;
+  cursor: pointer;
 }
 
-.technologies__details-icon {
-  font-size: 1rem;
-  color: var(--first-color);
-  margin-top: 0.15rem;
+.technologies__content {
+  overflow: hidden;
+  height: 0;
+}
+
+.technologies__item,
+.technologies__header,
+.technologies__item-title,
+.technologies__icon,
+.technologies__description,
+.technologies__content {
+  transition: 0.3s;
+}
+
+.technologies__item:hover {
+  box-shadow: 0 2px 8px hsla(var(--hue), 4%, 15%, 0.15);
+}
+
+/*Rotate icon, change color of titles and background*/
+.accordion-open .technologies__header,
+.accordion-open .technologies__content {
+  background-color: var(--first-color);
+}
+
+.accordion-open .technologies__item-title,
+.accordion-open .technologies__description,
+.accordion-open .technologies__icon {
+  color: #fff;
+}
+
+.accordion-open .technologies__icon {
+  transform: rotate(45deg);
 }
