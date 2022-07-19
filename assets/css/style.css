@@ -447,7 +447,7 @@ body.dark-theme {
   justify-self: center;
   margin-bottom: var(--mb-0-75);
   transition: 0.3s;
-  border-radius: 0.25rem;
+  border-radius: 0.2 5rem;
 }
 
 .project__title,

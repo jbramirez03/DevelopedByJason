@@ -25,20 +25,16 @@
         <div class="nav__menu" id="nav-menu">
           <ul class="nav__list">
             <li class="nav__item">
-              <a href="#about" id="about" class="nav__link active-link"
-                >About</a
-              >
+              <a href="#about" class="nav__link active-link">About</a>
             </li>
             <li class="nav__item">
-              <a href="#technologies" id="technologes" class="nav__link"
-                >Technologies</a
-              >
+              <a href="#technologies" class="nav__link">Technologies</a>
             </li>
             <li class="nav__item">
-              <a href="#projects" id="projects" class="nav__link">Projects</a>
+              <a href="#projects" class="nav__link">Projects</a>
             </li>
             <li class="nav__item">
-              <a href="#contact" id="contact" class="nav__link">Contact</a>
+              <a href="#contact" class="nav__link">Contact</a>
             </li>
           </ul>
 
@@ -504,6 +500,47 @@
               </div>
             </div>
           </div>
+
+          <form
+            action="https://formspree.io/f/mnqwkygq"
+            method="POST"
+            class="contact__form"
+          >
+            <div class="contact__inputs">
+              <div class="contact__content">
+                <input type="email" name="email" id="email" placeholder=" " />
+                <label for="email" class="contact__label">Email</label>
+              </div>
+
+              <div class="contact__content">
+                <input
+                  type="text"
+                  name="subject"
+                  id="subject"
+                  placeholder=" "
+                  class="contact__input"
+                />
+                <label for="subject" class="contact__label">Subject</label>
+              </div>
+
+              <div class="contact__content contact__area">
+                <textarea
+                  name="message"
+                  placeholder=" "
+                  id="message"
+                  data-gramm_editor="false"
+                  data-enable-grammarly="false"
+                  class="contact__input"
+                ></textarea>
+                <label for="message" class="contact__label">Message</label>
+              </div>
+            </div>
+
+            <button class="button button--flex">
+              Send Message
+              <i class="ri-arrow-right-up-line button__icon"></i>
+            </button>
+          </form>
         </div>
       </section>
 
