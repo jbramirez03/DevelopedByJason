@@ -649,3 +649,176 @@ body.dark-theme {
 .show-scroll {
   bottom: 3rem;
 }
+
+::-webkit-scrollbar {
+  width: 0.6rem;
+  background: hsl(var(--hue), 4%, 53%);
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--hue), 4%, 29%);
+  border-radius: 0.5rem;
+}
+
+@media screen and (max-width: 320px) {
+  .container {
+    margin-left: var(--mb-1);
+    margin-right: var(--mb-1);
+  }
+
+  .about__img {
+    width: 180px;
+  }
+
+  .about__title {
+    font-size: var(--h1-font-size);
+  }
+
+  .project__container {
+    grid-template-columns: 0.8fr;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .project__description {
+    padding: 0 4rem;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  body {
+    margin: 0;
+  }
+
+  .nav {
+    height: calc(var(--header-height) + 1.5rem);
+    column-gap: 3rem;
+  }
+
+  .nav__toggle,
+  .nav__close {
+    display: none;
+  }
+
+  .nav__list {
+    flex-direction: row;
+    column-gap: 3rem;
+  }
+
+  .nav__menu {
+    margin-left: auto;
+  }
+
+  .about__container,
+  .technologies__container,
+  .contact__container,
+  .footer__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .about {
+    padding: 10rem 0 5rem;
+  }
+
+  .about__container {
+    align-items: center;
+  }
+
+  .about__img {
+    width: 280px;
+    order: 1;
+  }
+
+  .technologies__container {
+    align-items: flex-start;
+  }
+
+  .footer__container {
+    column-gap: 3rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .section {
+    padding: 8rem 0 1rem;
+  }
+
+  .section__title,
+  .section__title-center {
+    font-size: var(--h1-font-size);
+  }
+
+  .about {
+    padding: 13rem 0 5rem;
+  }
+
+  .about__img {
+    width: 350px;
+  }
+
+  .about__description {
+    padding-right: 7rem;
+  }
+
+  .project__description {
+    padding: 0 16rem;
+  }
+
+  .project__container {
+    padding: 4rem 0;
+    grid-template-columns: repeat(2, 420px);
+    gap: 4rem 6rem;
+  }
+
+  .project__img {
+    width: 375px;
+  }
+
+  .project__title {
+    font-size: var(--normal-font-size);
+  }
+
+  .technologies__container {
+    padding: 1rem 0 4rem;
+  }
+
+  .technologies__title {
+    text-align: initial;
+  }
+
+  .technologies__group {
+    row-gap: 2rem;
+  }
+
+  .technologies__header {
+    padding: 1rem;
+  }
+
+  .technologies__description {
+    padding: 1rem 3.5rem 1rem 2.75rem;
+  }
+
+  .footer__logo {
+    font-size: var(--h3-font-size);
+  }
+
+  .footer__container {
+    grid-template-columns: 1fr 0.5fr 0.5fr 0.5fr;
+  }
+
+  .footer__copy {
+    margin: 7rem 0 2rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .scrollup {
+    right: 3rem;
+  }
+}
