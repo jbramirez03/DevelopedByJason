@@ -119,3 +119,18 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-theme', getCurrentTheme());
     localStorage.setItem('selected-icon', getCurrentIcon());
 });
+
+
+const sr = ScrollReveal({
+    origin: 'top',
+    distance: '60px',
+    duration: 2500,
+    delay: 400,
+});
+
+
+sr.reveal(`.about__data`);
+sr.reveal(`.about__img`, { delay: 500 });
+sr.reveal(`.contact__box, .section__title-center`, { origin: 'left' });
+sr.reveal(`.contact__form, .project__description`, { origin: 'right' });
+sr.reveal(` .project__card, .technologies__group, .footer`, { interval: 100 });
