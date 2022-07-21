@@ -133,16 +133,10 @@ body.dark-theme {
   the website, in dark theme 
   ==========*/
 
-.dark-theme .steps__bg {
-  background-color: var(--first-color-dark);
-}
-
-.dark-theme .product__circle,
 .dark-theme .technologies {
   background-color: var(--container-color);
 }
 
-.dark-theme .product__circle,
 .dark-theme .footer__subscribe {
   background-color: var(--container-color);
 }
